@@ -1,0 +1,26 @@
+MODEL_NAME = 'Rakesh_model1_DTC.joblib'
+ORIGINAL_FEATURES = ['Person_ID', 'Loan Account Number', 'Relationship_Start_Date',
+       'OCCUPATION', 'DATE_OF_BIRTH', 'BUSINESS_TYPE', 'STATE',
+       'No_of_Mobile_No', 'CUSTOMER_EMAIL', 'GENDER', 'MARITAL_STATUS',
+       'REGION', 'BASIC_CURRENT', 'BASIC_SAVINGS', 'ATMCARD', 'TOTAL_PRODUCTS',
+       'Loan_ID', 'Loan Tenure', 'Payment Period', 'Loan Amount (Principal)',
+       'Loan Application Date', 'Loan Approval Date', 'Loan Disbursement Date',
+       'Loan Maturity Date', 'Latest Known Status', 'Ever 90dpd+',
+       'Currently ≥ 60dpd', 'Bad Indicator', 'TRN_DT', 'TRANS_TYPE',
+       'AMOUNT_IN_NAIRA', 'NARRATION', 'Relationship_Start_length',
+       'Loan Disbursement lenth', 'Loan Maturity length', 'TRN_Len']
+FEATURES_TO_ENCODE = ['Latest Known Status', 'MARITAL_STATUS', 'REGION', 'GENDER']
+ONE_HOT_ENCODED_FEATURES = ['Loan Account Number', 'OCCUPATION', 'BUSINESS_TYPE', 'STATE',
+       'No_of_Mobile_No', 'CUSTOMER_EMAIL', 'BASIC_CURRENT', 'BASIC_SAVINGS',
+       'ATMCARD', 'TOTAL_PRODUCTS', 'Loan_ID', 'Loan Tenure', 'Payment Period',
+       'Loan Amount (Principal)', 'Bad Indicator', 'TRANS_TYPE',
+       'AMOUNT_IN_NAIRA', 'NARRATION', 'Relationship_Start_length',
+       'Loan Disbursement lenth', 'Loan Maturity length', 'TRN_Len',
+       'Latest Known Status_ Current (active no arrears)',
+       'Latest Known Status_Closed (fully repaid)',
+       'Latest Known Status_In Default', 'Latest Known Status_In arrears',
+       'MARITAL_STATUS_0', 'MARITAL_STATUS_Divorced', 'MARITAL_STATUS_Married',
+       'MARITAL_STATUS_Seperated', 'MARITAL_STATUS_Single',
+       'MARITAL_STATUS_Spouse_Expired', 'REGION_ABUJA', 'REGION_HEAD_OFFICE',
+       'REGION_LAGOS_ISLAND', 'REGION_LAGOS_MAINLAND', 'REGION_NORTH',
+       'REGION_SOUTH', 'REGION_WEST', 'GENDER_F', 'GENDER_M', 'GENDER_P']
