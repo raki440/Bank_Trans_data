@@ -42,7 +42,7 @@ def apply_model(model, inference_data):
 @app.get('/')
 def get_root():
 
-	return {'message': 'Welcome to the Heart Disease Detection API'}
+	return {'message': 'Welcome to the Loan Detection API'}
 	
 @app.post("/predict", response_model=OutputDataModel)
 async def post_predictions(inference_data: InputDataModel):
